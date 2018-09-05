@@ -52,13 +52,12 @@ class Song
     if find_by_name(name)
       name
     else
-      (create_by_name(name)).name
-
+      create_by_name(name)
+      name
     end
   end
 
   def self.alphabetical
-
     alphabetized = @@all.sort_by{|word| word}
     return alphabetized
   end
