@@ -52,7 +52,7 @@ class Song
     if find_by_name(name)
       name
     else
-      create_by_name(name).name
+      (create_by_name(name)).name
 
     end
   end
