@@ -55,11 +55,10 @@ class Song
       create_by_name(name)
     end
   end
-
+binding.pry
   def self.alphabetical
     alphabetized = @@all.sort_by{|word| word}
     return alphabetized
-    binding.pry
   end
 
   def self.new_from_filename(file)
