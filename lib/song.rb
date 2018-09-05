@@ -57,7 +57,7 @@ class Song
   end
   def self.alphabetical
   binding.pry
-    alphabetized = @@all.sort_by{|word| word}
+    alphabetized = @@all.sort_by{|word| @name.word}
     return alphabetized
   end
 
