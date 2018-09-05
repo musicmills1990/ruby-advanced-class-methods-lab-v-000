@@ -57,7 +57,7 @@ class Song
   end
 
   def self.alphabetical
-    alphabetized = @@all.sort_by{|word| word.length}
+    alphabetized = @@all.sort_by{|word| word}
     return alphabetized
   end
 
