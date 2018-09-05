@@ -48,13 +48,11 @@ class Song
   end
 
 
-  def self.find_or_create_by_name(name)
-    if find_by_name(name) == name
-      name = @name
+  def self.find_or_create_by_name(@name)
+    if find_by_name(name) == @name
       @name
     else
       create_by_name(name)
-      name = @name
     end
   end
 
