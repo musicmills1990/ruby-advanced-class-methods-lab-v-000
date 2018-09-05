@@ -54,6 +54,7 @@ class Song
       @name
     else
       create_by_name(name)
+      name = @name
     end
   end
 
