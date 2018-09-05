@@ -57,8 +57,9 @@ class Song
   end
 
   def self.alphabetical
-    alphabetized = @@all.name.sort_by{|word| word}
+    alphabetized = @@all.sort_by{|word| word}
     return alphabetized
+    binding.pry
   end
 
   def self.new_from_filename(file)
