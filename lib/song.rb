@@ -59,6 +59,7 @@ class Song
     songs =[]
     @@all.each do |song|
       songs << song.name
+    end
     alphabetized = songs.sort_by{|word| word}
     return alphabetized
   end
