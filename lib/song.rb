@@ -55,8 +55,8 @@ class Song
       create_by_name(name)
     end
   end
-binding.pry
   def self.alphabetical
+    binding.pry
     alphabetized = @@all.sort_by{|word| word}
     return alphabetized
   end
