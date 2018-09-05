@@ -57,7 +57,7 @@ class Song
   end
 
   def self.alphabetical
-    alphabetized = find_by_name(name).sort_by{|word| word}
+    alphabetized = @name.sort_by{|word| word}
     return alphabetized
   end
 
