@@ -57,7 +57,7 @@ class Song
   end
 
   def self.alphabetical
-    alphabetized = @@all.sort_by{|object| object.attribute}
+    alphabetized = @@all.sort_by{|object| object.name}
     return alphabetized
   end
 
