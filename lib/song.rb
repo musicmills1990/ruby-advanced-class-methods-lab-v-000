@@ -56,10 +56,7 @@ class Song
     end
   end
   def self.alphabetical
-    songs =[]
-    @@all.each do |song|
-      songs << song.name
-    end
+  binding.pry
     alphabetized = songs.sort_by{|word| word}
     return alphabetized
   end
